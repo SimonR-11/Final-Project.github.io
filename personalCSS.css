@@ -1,0 +1,64 @@
+/*miscCSS*/
+body {
+  background-color: rgb(243, 236, 225);   
+}
+#logoPic{
+  background-color: rgb(185, 207, 244);
+}
+#homeJumbo{
+  background-color: rgba(205, 217, 215, 0.788);
+}
+#card1,#card2{
+  background-color: rgba(205, 217, 215, 0.788);
+}
+#footer1{
+  text-align: right;
+}
+.form1{
+  border: 5px solid black;
+  background-color: whitesmoke;
+}
+.form2{
+  border: 5px solid black;
+  background-color: whitesmoke;
+}
+#needCard{
+  margin-right: 5px;
+}
+#doNotNeedCard{
+  margin-right: 5px;
+}
+.subtotalActive{
+  background-color: white;
+  border: 3px solid black;
+  height: 30px;
+  width: 100px;
+  position: relative;
+  right: -119px;
+  top: -20px;
+}
+.subtotalActive2{
+  background-color: white;
+  border: 3px solid black;
+  height: 30px;
+  width: 100px;
+  position: relative;
+  right: -119px;
+  top: -20px;
+}
+.remarked{
+  background-color: white;
+  border: 3px solid black;
+  height: 30px;
+  width: 100px;
+  position: relative;
+  right: -119px;
+  top: -20px;
+}
+
+.secondColor:hover{
+  color: rgb(255, 255, 255); 
+  background-color: rgba(0, 110, 255, 0.809);
+  box-shadow: 0 0 20px 5px #525252;
+  box-shadow: inset 0 0 15px #ffffff;
+}

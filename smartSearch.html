@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="personalCSS.css">
+    <!--Personal CSS-->
+    <script src="personalJS.js"></script>
+    <!--Personal JS-->
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-primary bg-light sticky-top shadow rounded-bottom">
+            <a class="navbar-brand">CTA: Ride the Rail</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                <a class="nav-link active" href="homePage.html">| Home Page |<span class="sr-only">(current)</span></a>
+                <a class="nav-link active" href="smartSearch.html">| Buy/Add Card |</a>
+                <a class="nav-link active" href="news.html">| News |</a>
+                </div>
+            </div>
+        </nav>
+        <div class="row mt-2 ">
+            <div class="col-md-4">
+                <form class="form1 rounded text-center shadow">
+                    <label class="mt-1">Do You Need to Buy a Transit Card? Cost: $5.00</label><br>
+                    <input type="text" id="mailAddress" placeholder="Your Mailing Address" required></input><br><br>
+                    <input type="text" id="creditInfo" placeholder="Your Credit Card Info" required></input><br><br>
+                    <p id="output5"></p>
+                    <button type="button" onclick="calc()" class="secondColor btn border-dark">Buy!</button><br><br>
+                    <p>Your Subtotal is:</p>
+                    <div class="subtotal rounded"><p id="output"></p></div>
+                    <p id="output2">Plus Tax: 10%</p>
+                    <p>Total:</p> 
+                    <p id="output3" class="total"></p>
+                    <p id="output4" class="finalRemark"></p>
+                </form>  
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow" style="width: 22rem;">
+                <img src="media/cta4.webp" class="card-img-top" alt="pic of map">
+                <div class="card-body">
+                    <h5 class="card-title">How Buy a Card, or Add Money Too One</h5>
+                    <p class="card-text">On this page of our website you can order a brand new transit card to ride all over our network, as well as, adding money to your transit card directly. To buy a card simply fill out your address and a card costing $5.00 will be sent to you within 2-4 days after your purchase. To add money onto an already existing card please input you cards 7 digit code and how much money you would like placed on your card. There you go, it's as simple as that. See you riding the rail.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <form class="form2 rounded text-center shadow">
+                    <label class="mt-1">How Much Money Would Like to Place Money on Your Card?</label><br>
+                    <input type="text" id="card_Number" placeholder="Card Number (7 digits)"></input><br><br>
+                    <p id="N/A"></p>
+                    <input type="number" id="moneyInput" placeholder="Amount of Money"></input><br><br>
+                    <button type="button" onclick="add()" class="secondColor btn border-dark">Add Money!</button><br>
+                    <h1>Your Current Stockpile is:</h1><h1 id="currentAmount"></h1>
+                </form>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-md-12">
+                <footer class="">
+                    <p id="footer1">&copy 2026, CTA: Ride The Rail. Contact: <a href="mailto:feedback@transitchicago.com" target="_blank">feedback@transitchicago.com</a></p>
+                </footer>
+            </div>
+        </div>
+    </div><!--End of Container-->
+    </body>
+</html>
